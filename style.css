@@ -1,27 +1,27 @@
 header{
-    text-align:left;
-    padding: 15px 20px;
+    padding: 1px 20px;
     justify-content: space-between;
     display: flex;
-    border-radius: 1px 1px 1px 1px;
+    width: 97%;
+    position:fixed;
+    background-color: transparent;
 }
 nav{
-    padding: 50px 50px;
+    padding: 50px 40px;
 }
 nav a{
-    padding: 15px 10px;
+    padding: 50px 10px;
     color:#606c38;
     text-decoration: none;
     border-radius: 5px 5px 5px 5px;
     transition: 0.7s;
-    font-family: Nunito;
     font-size: 18px;
     justify-content: space-between;
     border-radius: 1px 1px 1px 1px;
 }
 nav a:hover{
     background-color: #e5e5e5;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 10px 10px 10px 10px;
     text-decoration:underline;
 }
 header img{
@@ -29,4 +29,30 @@ header img{
 }
 body{
     margin: 0px;
+}
+.home{
+    background-image: url("Gemini_Generated_Image_h7mqw4h7mqw4h7mq.png");
+    height: 718px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 50px;
+}
+.deschome{
+   margin: 100px 10px 0px 30px; 
+   padding: 10px 750px 0px 10px;
+}
+html{
+    font-family: Nunito;
+    color:#ffffff;
+}
+.deschome a{
+    text-decoration: none;
+    color:#606c38;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.deschome a:hover{
+    background: #e5e5e5
 }
