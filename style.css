@@ -33,10 +33,10 @@ body{
 .home{
     background-image: url("Gemini_Generated_Image_h7mqw4h7mqw4h7mq.png");
     height: 718px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding-top: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 50px;
 }
 .deschome{
    margin: 100px 10px 0px 30px; 
@@ -50,10 +50,10 @@ html{
     text-decoration: none;
     color:#606c38;
     background: rgba(255, 255, 255, 0.85);
+    margin: 100px, 0px, 0px, 0px;
     padding: 10px 30px;
     border-radius: 10px;
 }
 .deschome a:hover{
     background: #e5e5e5
 }
-
