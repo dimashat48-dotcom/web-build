@@ -1,19 +1,16 @@
-/* 1. Global & Smooth Scroll */
 html {
     font-family: 'Nunito', sans-serif;
-    scroll-behavior: smooth; /* Makes the "Learn More" button glide */
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    color:#606c38
 }
-
 body {
     margin: 0;
-    background-color: #000; /* Dark background like BMW's dark mode */
+    background-color: #000;
 }
-
-/* 2. The BMW-Style Header */
 header {
-    position: fixed; /* Stays at the top */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,162 +19,132 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white */
+    background-color: rgb(255, 255, 255);
     box-sizing: border-box;
 }
-
 header img {
-    height: 40px; /* Adjust this to make it even smaller if needed */
-    width: auto;  /* Keeps the aspect ratio perfect */
+    height: 40px;
+    width: auto;
 }
-
-/* 1. Base State (How it looks normally) */
 nav a {
-    padding: 8px 16px; /* Vertical 8px, Horizontal 16px */
+    padding: 8px 16px;
     font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: #606c38;
     text-decoration: none;
-    border-radius: 4px; /* Slight rounding looks modern */
-    transition: background-color 0.3s ease, color 0.3s ease; /* This makes it "fade" in/out */
+    border-radius: 4px;
+    transition: 0.3s;
 }
-
-/* 2. Hover State (The change you requested) */
 nav a:hover {
-    background-color: rgba(96, 108, 56, 0.1); /* 10% opacity of your green */
-    color: #283618; /* A slightly darker green for contrast */
-    text-decoration: none; /* BMW usually avoids underlines on hover */
+    background-color: rgba(96, 108, 56, 0.1);
+    color: #283618;
+    text-decoration: none;
+    font-weight: 900;
+    text-decoration: underline;
 }
-
-/* 3. Darkened Hero Section */
 .home {
-    height: 100vh; /* Full screen height */
+    height: 125%;
     display: flex;
     align-items: center;
-    /* This gradient darkens the image: */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), 
                 url("Gemini_Generated_Image_h7mqw4h7mqw4h7mq.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
 .deschome {
-    max-width: 600px;
-    margin-left: 10%;
+    max-width: 500px;
+    margin-left: 5%;
     color: white;
 }
-
 .deschome h1 {
-    font-size: 3rem;
+    font-size: 48px;
     margin-bottom: 20px;
 }
-
-/* 4. The Modern Button */
 .deschome a {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    background: #606c38; /* BMW Blue */
+    color: #ffffff;
+    background: #606c38;
     padding: 15px 40px;
-    font-weight: bold;
+    font-weight: 800;
     transition: 0.3s;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 12px 12px 12px 12px;
 }
-
 .deschome a:hover {
     background: #656d4a;
 }
-
-/* 5. General Section Spacing */
 section {
     padding: 100px 0;
-    min-height: 80vh;
+    min-height: 75vh;
 }
-/* --- SECTION: ABOUT (Image Left, Text Right) --- */
 .about {
-    display: flex;            /* Makes children sit side-by-side */
-    align-items: center;      /* Centers image and text vertically */
+    display: flex;
+    align-items: center;
     justify-content: center;
     padding: 120px 10% 80px 10%;
     background-color: #ffffff;
-    gap: 80px;                /* Creates luxury whitespace between pic and text */
+    gap: 80px;
 }
-
 .image-side {
-    flex: 1;                  /* Takes up 50% of the width */
+    flex: 1;
     display: flex;
-    justify-content: flex-end; /* Pushes image toward the center gap */
+    justify-content: flex-end;
 }
-
 .image-side img {
     width: 100%;
-    max-width: 500px;         /* Keeps the bag from looking too huge */
+    max-width: 600px;
     height: auto;
-    /* This filter makes the bag look more realistic on the white page: */
     filter: drop-shadow(0 20px 50px rgba(0,0,0,0.08)); 
 }
-
 .text-side {
-    flex: 1;                  /* Takes up the other 50% */
-    text-align: left;         /* Professional left-aligned text */
+    flex: 1;
+    text-align: left;
 }
-
 .text-side h2 {
     font-size: 14px;
     letter-spacing: 3px;
-    color: #606c38;           /* Your brand green */
+    color: #606c38;
     margin-bottom: 10px;
 }
-
 .text-side h1 {
-    font-size: 3rem;
-    color: #000;
+    font-size: 48px;
+    color: #656d4a;
     margin: 0 0 25px 0;
     line-height: 1.1;
 }
-
 .text-side p {
     font-size: 18px;
     line-height: 1.8;
-    color: #444;
+    color: #656d4a;
     margin-bottom: 20px;
 }
-
-/* --- SECTION: TUTORIAL (Centered Layout) --- */
 .tutorial {
     padding: 100px 10%;
-    background-color: #f8f9fa; /* Slight grey contrast */
+    background-color: #f8f9fa;
     text-align: center;
 }
-
 .desctutorial {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
-
 .desctutorial h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
     margin-bottom: 30px;
 }
-
 .desctutorial ol {
-    display: inline-block; /* Keeps the list centered but text left-aligned */
+    display: inline-block;
     text-align: left;
     padding-left: 20px;
     line-height: 2.2;
-    font-weight: 700;
-    color: #606c38;
-}
-html{
+    font-weight: 600;
     color: #606c38;
 }
 .profile {
     padding: 100px 10%;
-    background-color: #f6f6f6; /* Light grey to separate from white sections */
+    background-color: #f6f6f6;
 }
-
 .profile-container {
     display: flex;
     align-items: center;
@@ -185,41 +152,33 @@ html{
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .profile-image {
     flex: 1;
 }
-
 .profile-image img {
     width: 100%;
     max-width: 400px;
-    filter: grayscale(20%); /* Desaturating slightly makes it look more "editorial" */
-    border-bottom: 5px solid #606c38; /* BMW Blue accent line */
+    border-bottom: 7.5px solid #606c38;
 }
-
 .profile-text {
     flex: 1.2;
 }
-
 .profile-text h2 {
     font-size: 14px;
     letter-spacing: 4px;
     color: #666;
     margin-bottom: 10px;
 }
-
 .profile-text h1 {
     font-size: 3rem;
     margin-bottom: 25px;
 }
-
 .profile-text p {
     font-size: 18px;
     line-height: 1.6;
-    color: #444;
+    color: #283618;
     margin-bottom: 40px;
 }
-/* Technical Specs Grid */
 .specs-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -227,152 +186,42 @@ html{
     border-top: 1px solid #ddd;
     padding-top: 30px;
 }
-
 .spec-item span {
     display: block;
     font-size: 12px;
     font-weight: 700;
-    color: #999;
+    color: #283618;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-
 .spec-item p {
     font-size: 16px;
     font-weight: 700;
-    color: #000;
+    color: #606c38;
     margin: 0;
 }
 .connect-links {
     display: flex;
-    flex-direction: column; /* Stacks links vertically like a technical list */
+    flex-direction: column;
     gap: 10px;
     margin-top: 10px;
 }
-
 .connect-links a {
     text-decoration: none;
-    color: #000;
+    color: #656d4a;
     font-size: 15px;
     font-weight: 700;
     transition: 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between icon and text */
+    gap: 8px;
 }
-
-/* BMW-style hover: subtle blue or slight opacity shift */
 .connect-links a:hover {
-    color: #606c38; /* BMW Blue */
-    padding-left: 5px; /* Subtle "nudge" effect when hovering */
+    color: #606c38;
+    padding-left: 5px;
 }
-
 .connect-links i {
     font-size: 16px;
-    width: 20px; /* Keeps icons aligned perfectly */
-    color: #666;
-}
-/* --- Gallery Section --- */
-.gallery {
-    padding: 100px 8% 120px 8%;
-    background-color: #000; /* Dark background like the BMW section */
-    color: #fff;
-}
-
-.gallery-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.gallery-header h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-}
-
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.gallery-card {
-    position: relative;
-    overflow: hidden;
-    height: 550px;
-}
-
-.gallery-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.card-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px;
-    box-sizing: border-box;
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 70%);
-}
-
-.card-overlay span {
-    display: block;
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 10px;
-}
-
-.card-overlay h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 0 0 15px 0;
-    line-height: 1.2;
-}
-
-.card-overlay p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 30px;
-}
-
-.btn-outlined {
-    display: inline-block;
-    padding: 12px 30px;
-    border: 1px solid #fff;
-    color: #fff;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 2px;
-    transition: 0.3s;
-}
-
-.btn-outlined:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-.gallery-card:hover img {
-    transform: scale(1.05);
-}
-.gallery-card img {
-    filter: grayscale(30%);
-    transition: filter 0.5s ease, transform 0.5s ease;
-}
-
-.gallery-card:hover img {
-    filter: grayscale(0%);
-    transform: scale(1.03);
+    width: 20px;
+    color: #656d4a;
 }
